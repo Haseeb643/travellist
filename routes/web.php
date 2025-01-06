@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\TestingController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/listing', [ListingController::class, 'listing'])->name('listing');
+Route::get('/testing',[TestingController::class,'testing'])->name('testing');
